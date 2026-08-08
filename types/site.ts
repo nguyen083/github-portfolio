@@ -6,4 +6,5 @@ export interface SiteConfig {
   ogImage: string;
   twitterHandle?: string;
   githubUsername: string;
+  keywords: string[];
 }

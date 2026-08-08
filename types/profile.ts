@@ -20,6 +20,8 @@ export interface Profile {
   shortIntro: string;
   /** Longer professional summary shown in the About section */
   aboutText: string;
+  /** Short highlight bullets shown alongside aboutText (e.g. experience, teamwork) */
+  aboutHighlights: string[];
   location?: string;
   /** Path to CV file inside /public, e.g. "/cv/john-doe-cv.pdf" */
   resumeUrl: string;

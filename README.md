@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio
 
-## Getting Started
+A personal developer portfolio built with Next.js (App Router), TypeScript, Tailwind CSS, and Framer Motion. Statically exported and deployed to GitHub Pages.
 
-First, run the development server:
+## Getting started
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view it.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Updating content
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+All personal content lives in `data/*.ts` (typed by `types/*.ts`) - no need to touch components:
 
-## Learn More
+- `data/profile.ts` - name, title, avatar, bio, resume link, social links
+- `data/skills.ts` - skill groups
+- `data/projects.ts` - featured projects
+- `data/experience.ts` - work experience timeline
+- `data/education.ts` - education history
+- `data/certificates.ts` - certificates
+- `data/site.ts` - site metadata (title, description, URL, OG image, keywords, GitHub username)
 
-To learn more about Next.js, take a look at the following resources:
+Place your images/CV under `public/images/` and `public/cv/` matching the paths referenced in `data/profile.ts`.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Building
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+npm run build
+```
 
-## Deploy on Vercel
+This produces a static export in `out/` (`output: "export"` in `next.config.ts`).
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Deploying to GitHub Pages
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Push to `main` and the `.github/workflows/deploy.yml` workflow builds and publishes `out/` to GitHub Pages automatically. In the repo settings, set **Settings > Pages > Source** to **GitHub Actions**.
+
+- If the repo is named `<username>.github.io`, the site is served from the domain root and no base path is needed.
+- For any other repo name, the workflow automatically sets `NEXT_PUBLIC_BASE_PATH=/<repo-name>` so asset paths resolve correctly under `https://<username>.github.io/<repo-name>`.
+
+After the first deploy, update `data/site.ts` `url` to the final published URL (used for canonical/Open Graph tags and `sitemap.ts`).

@@ -9,4 +9,11 @@ export const siteConfig: SiteConfig = {
   ogImage: "/images/og-image.png",
   twitterHandle: "@your_handle",
   githubUsername: "your-username",
+  keywords: [
+    "Frontend Developer",
+    "React",
+    "Next.js",
+    "TypeScript",
+    "Web Developer Portfolio",
+  ],
 };

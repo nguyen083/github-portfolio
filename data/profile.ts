@@ -18,6 +18,13 @@ export const profile: Profile = {
     "maintainable solutions and I pick up new tools quickly when a project needs them. " +
     "I write clean, well-structured code and care about the details that make an interface feel right. " +
     "I've worked in small, fast-moving teams where clear communication and ownership mattered as much as code quality.",
+  aboutHighlights: [
+    "Hands-on experience shipping production web apps",
+    "Strong problem-solving mindset",
+    "Fast learner, quick to adapt to new tools",
+    "Clean, maintainable, well-tested code",
+    "Effective communication & teamwork",
+  ],
   location: "Ho Chi Minh City, Vietnam",
   resumeUrl: "/cv/cv.pdf",
   email: "hello@example.com",
