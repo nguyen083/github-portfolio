@@ -5,6 +5,10 @@ export function JsonLd() {
   const sameAs = profile.socialLinks
     .filter((link) => link.platform !== "email")
     .map((link) => link.url);
+  const siteUrl = siteConfig.url.replace(/\/$/, "");
+  const avatarPath = profile.avatarUrl.startsWith("/")
+    ? profile.avatarUrl
+    : `/${profile.avatarUrl}`;
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -13,7 +17,7 @@ export function JsonLd() {
     jobTitle: profile.title,
     description: profile.shortIntro,
     url: siteConfig.url,
-    image: new URL(profile.avatarUrl, siteConfig.url).toString(),
+    image: `${siteUrl}${avatarPath}`,
     sameAs,
     ...(profile.location
       ? {

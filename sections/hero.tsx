@@ -4,6 +4,7 @@ import { GithubIcon } from "@/components/shared/icons";
 import { Button } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
 import { profile } from "@/data";
+import { withBasePath } from "@/lib/utils";
 import { motion, useReducedMotion } from "framer-motion";
 import { Download, Mail } from "lucide-react";
 import Image from "next/image";
@@ -27,7 +28,7 @@ export function Hero() {
       <Container className="flex flex-col items-center text-center">
         <motion.div {...fadeUp(0)}>
           <Image
-            src={profile.avatarUrl}
+            src={withBasePath(profile.avatarUrl)}
             alt={profile.fullName}
             width={112}
             height={112}

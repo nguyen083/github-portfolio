@@ -5,6 +5,7 @@ import { Card } from "@/components/ui/card";
 import { Container } from "@/components/ui/container";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { projects } from "@/data";
+import { withBasePath } from "@/lib/utils";
 import { ExternalLink } from "lucide-react";
 import Image from "next/image";
 
@@ -26,7 +27,7 @@ export function Projects() {
                 {project.imageUrl ? (
                   <div className="relative aspect-video w-full bg-zinc-100 dark:bg-zinc-800">
                     <Image
-                      src={project.imageUrl}
+                      src={withBasePath(project.imageUrl)}
                       alt={project.name}
                       fill
                       sizes="(min-width: 640px) 50vw, 100vw"
