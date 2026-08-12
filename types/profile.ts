@@ -1,9 +1,4 @@
-export type SocialPlatform =
-  | "github"
-  | "linkedin"
-  | "facebook"
-  | "email"
-  | "twitter";
+export type SocialPlatform = "github" | "linkedin" | "facebook" | "email";
 
 export interface SocialLink {
   platform: SocialPlatform;
@@ -22,6 +17,8 @@ export interface Profile {
   aboutText: string;
   /** Short highlight bullets shown alongside aboutText (e.g. experience, teamwork) */
   aboutHighlights: string[];
+  dateOfBirth?: string;
+  phone?: string;
   location?: string;
   /** Path to CV file inside /public, e.g. "/cv/john-doe-cv.pdf" */
   resumeUrl: string;

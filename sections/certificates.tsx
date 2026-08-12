@@ -6,6 +6,10 @@ import { certificates } from "@/data";
 import { Award, ExternalLink } from "lucide-react";
 
 export function Certificates() {
+  if (certificates.length === 0) {
+    return null;
+  }
+
   return (
     <section
       id="certificates"

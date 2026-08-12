@@ -1,11 +1,11 @@
 import type { Education } from "@/types";
 
-/** TODO: Replace with your real education background. */
 export const education: Education[] = [
   {
-    school: "University Name",
-    degree: "B.Eng. in Information Technology / Computer Science",
-    startYear: "2019",
-    endYear: "2023",
+    school: "HCMC University of Technology and Education",
+    degree: "Information Technology",
+    startYear: "2021",
+    endYear: "2025",
+    description: "Major: Software Engineering · GPA: 3.37/4",
   },
 ];

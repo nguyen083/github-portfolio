@@ -61,7 +61,11 @@ export function Hero() {
           {...fadeUp(0.25)}
           className="mt-8 flex flex-wrap items-center justify-center gap-3"
         >
-          <Button href={profile.resumeUrl} download>
+          <Button
+            href={profile.resumeUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Download className="h-4 w-4" />
             Download CV
           </Button>
@@ -74,7 +78,7 @@ export function Hero() {
             <GithubIcon className="h-4 w-4" />
             View GitHub
           </Button>
-          <Button href="#contact" variant="ghost">
+          <Button href="#contact" variant="outline">
             <Mail className="h-4 w-4" />
             Contact
           </Button>

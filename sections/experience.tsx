@@ -25,7 +25,7 @@ export function Experience() {
               className="relative mb-10 last:mb-0"
             >
               <Reveal delay={index * 0.1}>
-                <span className="absolute mt-1.5 h-2.5 w-2.5 -translate-x-[calc(1.5rem+3px)] rounded-full bg-foreground" />
+                <span className="absolute mt-1.5 h-2.5 w-2.5 -translate-x-6.75 rounded-full bg-foreground" />
                 <p className="text-xs font-medium text-zinc-500 dark:text-zinc-400">
                   {formatRange(exp.startDate, exp.endDate)}
                 </p>

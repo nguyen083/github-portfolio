@@ -43,7 +43,7 @@ export function GithubActivity() {
           <Reveal delay={0.15}>
             {/* eslint-disable-next-line @next/next/no-img-element -- externally generated SVG, not eligible for next/image optimization */}
             <img
-              src={`https://github-readme-stats.vercel.app/api?username=${username}&show_icons=true&theme=${statsTheme}&hide_border=true`}
+              src={`https://github-readme-stats-fast.vercel.app/api?username=${username}&show_icons=true&theme=${statsTheme}&hide_border=true`}
               alt={`${username}'s GitHub stats`}
               className="w-full rounded-xl"
               loading="lazy"
@@ -52,7 +52,7 @@ export function GithubActivity() {
           <Reveal delay={0.2}>
             {/* eslint-disable-next-line @next/next/no-img-element -- externally generated SVG, not eligible for next/image optimization */}
             <img
-              src={`https://github-readme-stats.vercel.app/api/top-langs/?username=${username}&layout=compact&theme=${statsTheme}&hide_border=true`}
+              src={`https://github-readme-stats-fast.vercel.app/api/top-langs/?username=${username}&layout=compact&theme=${statsTheme}&hide_border=true`}
               alt={`${username}'s top languages`}
               className="w-full rounded-xl"
               loading="lazy"

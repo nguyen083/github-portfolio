@@ -1,40 +1,39 @@
 import type { SkillGroup } from "@/types";
 
-/** TODO: Adjust skills to match your real proficiency. */
 export const skillGroups: SkillGroup[] = [
   {
     category: "frontend",
     label: "Frontend",
     skills: [
-      { name: "React", category: "frontend" },
-      { name: "Next.js", category: "frontend" },
-      { name: "TypeScript", category: "frontend" },
+      { name: "HTML & CSS", category: "frontend" },
       { name: "JavaScript", category: "frontend" },
-      { name: "HTML", category: "frontend" },
-      { name: "CSS", category: "frontend" },
+      { name: "TypeScript", category: "frontend" },
+      { name: "ReactJS", category: "frontend" },
+      { name: "VueJS", category: "frontend" },
       { name: "TailwindCSS", category: "frontend" },
+      { name: "Ant Design", category: "frontend" },
+      { name: "Material UI", category: "frontend" },
+      { name: "React Query", category: "frontend" },
     ],
   },
   {
     category: "backend",
     label: "Backend",
     skills: [
+      { name: "NodeJS", category: "backend" },
       { name: "NestJS", category: "backend" },
-      { name: "REST API", category: "backend" },
-      { name: "JWT", category: "backend" },
-      { name: "Prisma", category: "backend" },
-      { name: "PostgreSQL", category: "backend" },
+      { name: "Java", category: "backend" },
+      { name: "MySQL", category: "backend" },
     ],
   },
   {
     category: "tools",
     label: "Tools",
     skills: [
+      { name: "Docker", category: "tools" },
       { name: "Git", category: "tools" },
       { name: "GitHub", category: "tools" },
-      { name: "Docker", category: "tools" },
-      { name: "Postman", category: "tools" },
-      { name: "VS Code", category: "tools" },
+      { name: "Teamwork", category: "tools" },
     ],
   },
 ];

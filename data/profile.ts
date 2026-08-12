@@ -1,49 +1,49 @@
 import type { Profile } from "@/types";
 
-/**
- * TODO: Replace with your real information.
- * This is the single source of truth for Hero / About / Contact sections.
- */
 export const profile: Profile = {
-  fullName: "Nguyen Van A",
-  title: "Frontend Developer | Learning Backend with NestJS",
+  fullName: "Nguyễn Huỳnh Nguyên",
+  title: "Frontend Developer",
   avatarUrl: "/images/avatar.jpg",
   shortIntro:
-    "I build fast, accessible, and clean web interfaces with React and Next.js. " +
-    "Currently deepening my backend skills with NestJS and PostgreSQL. " +
-    "I care about readable code, good UX, and shipping things that work.",
+    "Frontend Developer with hands-on experience building production-ready web applications using React, Vue, and modern UI libraries. Strong focus on state management, data fetching optimization with React Query, and responsive UI design.",
   aboutText:
-    "I'm a Frontend Developer with hands-on experience building production web applications " +
-    "using React, Next.js, and TypeScript. I enjoy breaking down complex problems into simple, " +
-    "maintainable solutions and I pick up new tools quickly when a project needs them. " +
-    "I write clean, well-structured code and care about the details that make an interface feel right. " +
-    "I've worked in small, fast-moving teams where clear communication and ownership mattered as much as code quality.",
+    "I have experience designing and developing full-stack web systems with a frontend-first mindset, " +
+    "from IoT monitoring dashboards to recruitment platforms. I collaborate closely with backend teams, " +
+    "translate business requirements into practical interfaces, and focus on building maintainable, " +
+    "user-centric products that are stable in production.",
   aboutHighlights: [
-    "Hands-on experience shipping production web apps",
-    "Strong problem-solving mindset",
-    "Fast learner, quick to adapt to new tools",
-    "Clean, maintainable, well-tested code",
-    "Effective communication & teamwork",
+    "Production experience with ReactJS and VueJS",
+    "Strong state/data layer work with React Query",
+    "Responsive UI development with modern component libraries",
+    "RESTful API integration and system architecture collaboration",
+    "Clear communication and teamwork in cross-functional environments",
   ],
+  dateOfBirth: "10/12/2003",
+  phone: "0945552109",
   location: "Ho Chi Minh City, Vietnam",
-  resumeUrl: "/cv/cv.pdf",
-  email: "hello@example.com",
+  resumeUrl:
+    "https://drive.google.com/uc?export=download&id=1KSr_B31R5cm-4yPfx_CJGBdQ8lLPEten",
+  email: "dev.nguyennguyen@gmail.com",
   socialLinks: [
     {
       platform: "github",
       label: "GitHub",
-      url: "https://github.com/your-username",
+      url: "https://github.com/nguyen083",
     },
     {
       platform: "linkedin",
       label: "LinkedIn",
-      url: "https://linkedin.com/in/your-username",
+      url: "https://linkedin.com/in/nguyên-nguyễn-82666835a/",
     },
     {
       platform: "facebook",
       label: "Facebook",
-      url: "https://facebook.com/your-username",
+      url: "https://facebook.com/Nguyen.ypn",
     },
-    { platform: "email", label: "Email", url: "mailto:hello@example.com" },
+    {
+      platform: "email",
+      label: "Email",
+      url: "mailto:dev.nguyennguyen@gmail.com",
+    },
   ],
 };

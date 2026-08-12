@@ -1,8 +1,9 @@
 export interface Project {
   slug: string;
   name: string;
+  duration: string;
   description: string;
-  imageUrl: string;
+  imageUrl?: string;
   techStack: string[];
   githubUrl?: string;
   demoUrl?: string;

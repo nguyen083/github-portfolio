@@ -4,7 +4,6 @@ export interface SiteConfig {
   /** Deployed site URL, used for Open Graph / canonical tags */
   url: string;
   ogImage: string;
-  twitterHandle?: string;
   githubUsername: string;
   keywords: string[];
 }
